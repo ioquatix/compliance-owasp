@@ -9,7 +9,7 @@ def generate(level: "L1")
 	
 	requirements = []
 	
-	extract(input["Requirements"], level) do |requirement|
+	extract(input["Requirements"], level) do |requirement, scope|
 		shortcode = requirement["Shortcode"]
 		
 		id = "OWASP-ASVS-#{shortcode}"
@@ -19,11 +19,14 @@ def generate(level: "L1")
 		
 		requirements << {
 			"id" => id,
+			"scope" => scope,
 			"description" => description,
 		}
 	end
 	
-	File.write(output_path, JSON.pretty_generate(requirements: requirements))
+	File.open output_path, "w" do |file|
+		file.puts JSON.pretty_generate(requirements: requirements)
+	end
 end
 
 def generate_all
@@ -34,18 +37,22 @@ end
 
 private
 
-def extract(input, level, &block)
+def extract(input, level, scope: [], &block)
 	if input.is_a?(Array)
 		input.each do |item|
-			extract(item, level, &block)
+			extract(item, level, scope: scope.dup, &block)
 		end
 	elsif items = input["Items"]
+		if name = input["Name"]
+			scope << name
+		end
+		
 		items.each do |item|
-			extract(item, level, &block)
+			extract(item, level, scope: scope.dup, &block)
 		end
 	else
 		if input[level]["Required"]
-			yield input
+			yield input, scope
 		end
 	end
 end

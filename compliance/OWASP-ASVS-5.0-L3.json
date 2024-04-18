@@ -2,1254 +2,2506 @@
   "requirements": [
     {
       "id": "OWASP-ASVS-V1.1.4",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Secure Software Development Lifecycle"
+      ],
       "description": "Verify documentation and justification of all the application's trust boundaries, components, and significant data flows."
     },
     {
       "id": "OWASP-ASVS-V1.1.5",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Secure Software Development Lifecycle"
+      ],
       "description": "Verify definition and security analysis of the application's high-level architecture and all connected remote services."
     },
     {
       "id": "OWASP-ASVS-V1.1.6",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Secure Software Development Lifecycle"
+      ],
       "description": "Verify implementation of centralized, simple (economy of design), vetted, secure, and reusable security controls to avoid duplicate, missing, ineffective, or insecure controls."
     },
     {
       "id": "OWASP-ASVS-V1.2.2",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Authentication Architecture"
+      ],
       "description": "Verify that communications between back-end application components, including APIs, middleware and data layers, are authenticated and use individual user accounts."
     },
     {
       "id": "OWASP-ASVS-V1.2.3",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Authentication Architecture"
+      ],
       "description": "Verify that the application uses a single vetted user authentication mechanism that is known to be secure, can be extended to include strong authentication, and has sufficient logging and monitoring to detect account abuse or breaches."
     },
     {
       "id": "OWASP-ASVS-V1.2.4",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Authentication Architecture"
+      ],
       "description": "Verify that, if the application includes multiple authentication pathways, these are all documented together with the security controls and authentication strength which should be consistently enforced across them."
     },
     {
       "id": "OWASP-ASVS-V1.2.5",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Authentication Architecture"
+      ],
       "description": "Verify that a list of context specific words are documented in order to prevent their use in passwords."
     },
     {
       "id": "OWASP-ASVS-V1.4.4",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Access Control Architecture"
+      ],
       "description": "Verify the application uses a single and well-vetted access control mechanism for accessing protected data and resources. All requests must pass through this single mechanism to avoid copy and paste or insecure alternative paths."
     },
     {
       "id": "OWASP-ASVS-V1.4.5",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Access Control Architecture"
+      ],
       "description": "Verify that attribute or feature-based access control is used whereby the code checks the user's authorization for a feature or data item rather than just their role. Permissions should still be allocated using roles."
     },
     {
       "id": "OWASP-ASVS-V1.4.6",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Access Control Architecture"
+      ],
       "description": "Verify that communications between back-end application components, including APIs, middleware and data layers, are performed with the least necessary privileges."
     },
     {
       "id": "OWASP-ASVS-V1.5.1",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Input and Output Architecture"
+      ],
       "description": "Verify that input and output requirements clearly define how to handle and process data based on type and content."
     },
     {
       "id": "OWASP-ASVS-V1.6.1",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Cryptographic Architecture"
+      ],
       "description": "Verify that there is an explicit policy for management of cryptographic keys and that a cryptographic key lifecycle follows a key management standard such as NIST SP 800-57."
     },
     {
       "id": "OWASP-ASVS-V1.6.2",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Cryptographic Architecture"
+      ],
       "description": "Verify that consumers of cryptographic services protect key material and other secrets by using key vaults or API based alternatives."
     },
     {
       "id": "OWASP-ASVS-V1.6.3",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Cryptographic Architecture"
+      ],
       "description": "Verify that all keys and passwords are replaceable and are part of a well-defined process to re-encrypt sensitive data."
     },
     {
       "id": "OWASP-ASVS-V1.6.4",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Cryptographic Architecture"
+      ],
       "description": "Verify that the architecture treats client-side secrets (such as symmetric keys, passwords, or API tokens) as insecure and never uses them to protect or access sensitive data."
     },
     {
       "id": "OWASP-ASVS-V1.7.3",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Errors, Logging and Auditing Architecture"
+      ],
       "description": "Verify that an inventory exists documenting the logging performed at each layer of the application's technology stack, what events are being logged, log formats, where that logging is stored, how it is used, how access to it is controlled and how long logs are kept for."
     },
     {
       "id": "OWASP-ASVS-V1.8.1",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Data Protection and Privacy Architecture"
+      ],
       "description": "Verify that all sensitive data created and processed by the application has been identified and classified into protection levels, and ensure that a policy is in place on how to deal with sensitive data."
     },
     {
       "id": "OWASP-ASVS-V1.8.2",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Data Protection and Privacy Architecture"
+      ],
       "description": "Verify that all protection levels have an associated set of protection requirements and that these are applied in the architecture. This should include (but not be limited to) requirements related to encryption, integrity verification, retention, privacy and privacy-enhancing technologies to be used, and other confidentiality requirements."
     },
     {
       "id": "OWASP-ASVS-V1.11.1",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Business Logic Architecture"
+      ],
       "description": "Verify the definition and documentation of all application components in terms of the business or security functions they provide."
     },
     {
       "id": "OWASP-ASVS-V1.11.2",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Business Logic Architecture"
+      ],
       "description": "Verify that all application flows including authentication, session management and access control, maintain a consistent application and user state to prevent race conditions and business logic flaws."
     },
     {
       "id": "OWASP-ASVS-V1.11.3",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Business Logic Architecture"
+      ],
       "description": "Verify that all high-value business logic flows, including authentication, session management and access control are thread safe and resistant to time-of-check and time-of-use race conditions."
     },
     {
       "id": "OWASP-ASVS-V1.14.1",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Configuration Architecture"
+      ],
       "description": "Verify the segregation of back-end components of differing trust levels through well-defined security controls, firewall rules, API gateways, reverse proxies, cloud-based security groups, or similar mechanisms."
     },
     {
       "id": "OWASP-ASVS-V1.14.5",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Configuration Architecture"
+      ],
       "description": "Verify that application deployments adequately sandbox or isolate at the network level to delay and deter attackers from attacking other applications, especially when they are performing sensitive or dangerous actions such as deserialization."
     },
     {
       "id": "OWASP-ASVS-V1.14.7",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Configuration Architecture"
+      ],
       "description": "Verify the use of unique or special low-privilege operating system accounts for all back-end application components, services, and servers."
     },
     {
       "id": "OWASP-ASVS-V1.14.8",
+      "scope": [
+        "Architecture, Design and Threat Modeling",
+        "Configuration Architecture"
+      ],
       "description": "Verify that the application is able to discern and utilizes the user's true IP address to provide for sensitive functions, including rate limiting and logging."
     },
     {
       "id": "OWASP-ASVS-V2.1.1",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that user set passwords are at least 8 characters in length."
     },
     {
       "id": "OWASP-ASVS-V2.1.2",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that passwords of at least 64 characters are permitted, and that passwords of more than 128 characters are denied."
     },
     {
       "id": "OWASP-ASVS-V2.1.3",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that the application verifies the user's password exactly as received from the user, without any modifications such as truncation or case transformation."
     },
     {
       "id": "OWASP-ASVS-V2.1.4",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that any printable Unicode character, including language neutral characters such as spaces and Emojis are permitted in passwords."
     },
     {
       "id": "OWASP-ASVS-V2.1.5",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify users can change their password."
     },
     {
       "id": "OWASP-ASVS-V2.1.6",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that password change functionality requires the user's current and new password."
     },
     {
       "id": "OWASP-ASVS-V2.1.7",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that passwords submitted during account registration or password change are checked against an available set of, at least, the top 3000 passwords."
     },
     {
       "id": "OWASP-ASVS-V2.1.9",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that there are no password composition rules limiting the type of characters permitted. There should be no requirement for upper or lower case or numbers or special characters."
     },
     {
       "id": "OWASP-ASVS-V2.1.10",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that the application does not require periodic credential rotation."
     },
     {
       "id": "OWASP-ASVS-V2.1.11",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that \"paste\" functionality, browser password helpers, and external password managers are permitted."
     },
     {
       "id": "OWASP-ASVS-V2.1.12",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that password input fields use type=password to mask the entry. Applications may allow the user to temporarily view the entire masked password, or the last typed character of the password."
     },
     {
       "id": "OWASP-ASVS-V2.1.13",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that the application does not keep a password history."
     },
     {
       "id": "OWASP-ASVS-V2.1.14",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that passwords submitted during account registration or password changes are checked against a set of breached username and password pairs."
     },
     {
       "id": "OWASP-ASVS-V2.1.15",
+      "scope": [
+        "Authentication",
+        "Password Security"
+      ],
       "description": "Verify that the documented list of context specific words is used to prevent easy to guess passwords being created."
     },
     {
       "id": "OWASP-ASVS-V2.2.1",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that anti-automation controls are effective at mitigating breached credential testing, brute force, and account lockout attacks. Such controls include blocking the most common breached passwords, soft lockouts, rate limiting, CAPTCHA, ever increasing delays between attempts, IP address restrictions, or risk-based restrictions such as location, first login on a device, recent attempts to unlock the account, or similar. More than 5 failed authentication attempts per hour for a single account should trigger some sort of reaction or alert."
     },
     {
       "id": "OWASP-ASVS-V2.2.2",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that restricted authenticators (those using PSTN to deliver OTPs via phone or SMS) are offered only when alternate stronger methods are also offered and when the service provides information on their security risks to users."
     },
     {
       "id": "OWASP-ASVS-V2.2.3",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that users are notified after updates to authentication details, such as credential resets or modification of the username or email address."
     },
     {
       "id": "OWASP-ASVS-V2.2.4",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that a hardware-based authenticator and an authenticator that provides verifier impersonation resistance against phishing attacks (such as WebAuthn) are used."
     },
     {
       "id": "OWASP-ASVS-V2.2.5",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that where a Credential Service Provider (CSP) and the application verifying authentication are separated, mutually authenticated TLS is in place between the two endpoints."
     },
     {
       "id": "OWASP-ASVS-V2.2.6",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify replay resistance through the mandated use of One-time Passwords (OTP) devices, cryptographic authenticators, or lookup codes."
     },
     {
       "id": "OWASP-ASVS-V2.2.7",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify intent to authenticate by requiring the entry of an OTP token or user-initiated action such as a button press on a FIDO hardware key."
     },
     {
       "id": "OWASP-ASVS-V2.2.8",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that valid users cannot be deduced from failed authentication challenges, such as based on error messages, HTTP response codes, or different response times. Registration and forgot password functionality should also have this protection."
     },
     {
       "id": "OWASP-ASVS-V2.2.9",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that multi-factor authentication is required, that is, the application uses either a multi-factor authenticator or a combination of single-factor authenticators."
     },
     {
       "id": "OWASP-ASVS-V2.2.10",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that users are notified of suspicious authentication attempts. Suspicious authentication attempts may include successful or unsuccessful authentication from an unusual location or client, partially successful authentication with only one of multiple factors, successful or unsuccessful authentication after a long period of inactivity or successful authentication after several unsuccessful attempts."
     },
     {
       "id": "OWASP-ASVS-V2.2.11",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that, if the application includes multiple authentication pathways, there are no undocumented pathways and that security controls and authentication strength are enforced consistently."
     },
     {
       "id": "OWASP-ASVS-V2.2.12",
+      "scope": [
+        "Authentication",
+        "General Authenticator Security"
+      ],
       "description": "Verify that email is not used as either a single-factor or multi-factor authentication mechanism."
     },
     {
       "id": "OWASP-ASVS-V2.3.1",
+      "scope": [
+        "Authentication",
+        "Authenticator Lifecycle"
+      ],
       "description": "Verify system generated initial passwords or activation codes are securely randomly generated, at least 6 characters long, may contain letters and numbers, expire after a short period of time, and are single-use. These initial secrets must not be permitted to become the long term password."
     },
     {
       "id": "OWASP-ASVS-V2.3.2",
+      "scope": [
+        "Authentication",
+        "Authenticator Lifecycle"
+      ],
       "description": "Verify that enrollment and use of user-provided authentication devices are supported, such as a U2F or FIDO tokens."
     },
     {
       "id": "OWASP-ASVS-V2.3.3",
+      "scope": [
+        "Authentication",
+        "Authenticator Lifecycle"
+      ],
       "description": "Verify that automated reminders are configured and acted on to ensure that renewal instructions for time-bound authenticators are sent with enough time to be carried out before the old authenticator expires."
     },
     {
       "id": "OWASP-ASVS-V2.3.4",
+      "scope": [
+        "Authentication",
+        "Authenticator Lifecycle"
+      ],
       "description": "System administrators should not be able to change or choose any user's password, but rather only be able to initiate the password reset process for the user."
     },
     {
       "id": "OWASP-ASVS-V2.4.1",
+      "scope": [
+        "Authentication",
+        "Credential Storage"
+      ],
       "description": "Verify that one of the following password hashing functions is used when storing the user's password for the application: argon2id, scrypt, bcrypt or PBKDF2."
     },
     {
       "id": "OWASP-ASVS-V2.4.3",
+      "scope": [
+        "Authentication",
+        "Credential Storage"
+      ],
       "description": "Verify that if PBKDF2 is used, the iteration count should be a minimum of 1,300,000 iterations with PBKDF2-HMAC-SHA1, a minimum of 600,000 iterations using PBKDF2-HMAC-SHA256, or with a minimum of 210,000 iterations with PBKDF2-HMAC-SHA512."
     },
     {
       "id": "OWASP-ASVS-V2.4.4",
+      "scope": [
+        "Authentication",
+        "Credential Storage"
+      ],
       "description": "Verify that if bcrypt is used, the work factor is a minimum of 10 and password size is limited to 72-bytes due to bcrypt's input limit."
     },
     {
       "id": "OWASP-ASVS-V2.4.6",
+      "scope": [
+        "Authentication",
+        "Credential Storage"
+      ],
       "description": "Verify that if argon2id is used, there should be a minimum configuration of 19 MiB of memory, an iteration count of 2, and 1 degree of parallelism."
     },
     {
       "id": "OWASP-ASVS-V2.4.7",
+      "scope": [
+        "Authentication",
+        "Credential Storage"
+      ],
       "description": "Verify that if scrypt is used, the configuration should be a minimum work factor of (2^17), a minimum block size of 8 (1024 bytes), and a parallelization parameter of 1."
     },
     {
       "id": "OWASP-ASVS-V2.5.2",
+      "scope": [
+        "Authentication",
+        "Credential Recovery"
+      ],
       "description": "Verify password hints or knowledge-based authentication (so-called \"secret questions\") are not present."
     },
     {
       "id": "OWASP-ASVS-V2.5.4",
+      "scope": [
+        "Authentication",
+        "Credential Recovery"
+      ],
       "description": "Verify that default user accounts (e.g. \"root\", \"admin\", or \"sa\") are not present in the application or are disabled."
     },
     {
       "id": "OWASP-ASVS-V2.5.6",
+      "scope": [
+        "Authentication",
+        "Credential Recovery"
+      ],
       "description": "Verify forgotten password, and other recovery paths use a secure recovery mechanism, such as time-based OTP (TOTP) or other soft token, mobile push, or another offline recovery mechanism."
     },
     {
       "id": "OWASP-ASVS-V2.5.7",
+      "scope": [
+        "Authentication",
+        "Credential Recovery"
+      ],
       "description": "Verify that if OTP or multi-factor authentication factors are lost, that evidence of identity proofing is performed at the same level as during enrollment."
     },
     {
       "id": "OWASP-ASVS-V2.6.1",
+      "scope": [
+        "Authentication",
+        "Lookup Secret Verifier"
+      ],
       "description": "Verify that lookup secrets can be used only once."
     },
     {
       "id": "OWASP-ASVS-V2.6.2",
+      "scope": [
+        "Authentication",
+        "Lookup Secret Verifier"
+      ],
       "description": "Verify that lookup secrets stored at the back-end with less than 112 bits of entropy (19 random alphanumeric characters or 34 random digits) are hashed with an approved password storage hashing algorithm that incorporates a 32-bit random salt. A standard hash function can be used if the secret has 112 bits of entropy or more."
     },
     {
       "id": "OWASP-ASVS-V2.6.3",
+      "scope": [
+        "Authentication",
+        "Lookup Secret Verifier"
+      ],
       "description": "Verify that lookup secrets are generated using a Cryptographically Secure Pseudorandom Number Generator (CSPRNG) to avoid predictable values."
     },
     {
       "id": "OWASP-ASVS-V2.6.4",
+      "scope": [
+        "Authentication",
+        "Lookup Secret Verifier"
+      ],
       "description": "Verify that lookup secrets have a minimum of 20 bits of entropy (typically 4 random alphanumeric characters or 6 random digits is sufficient)."
     },
     {
       "id": "OWASP-ASVS-V2.7.1",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that cleartext out-of-band (NIST \"restricted\") authenticators, such as SMS or PSTN, are not offered by default, and stronger alternatives such as push notifications are offered first."
     },
     {
       "id": "OWASP-ASVS-V2.7.2",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that the out-of-band verifier expires out-of-band authentication requests, codes, or tokens within 10 minutes."
     },
     {
       "id": "OWASP-ASVS-V2.7.3",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that the out-of-band verifier authentication requests, codes, or tokens are only usable once, and only for the original authentication request."
     },
     {
       "id": "OWASP-ASVS-V2.7.4",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that the out-of-band authenticator and verifier communicates over a secure independent channel."
     },
     {
       "id": "OWASP-ASVS-V2.7.5",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that the out-of-band verifier retains only a hashed version of the authentication code."
     },
     {
       "id": "OWASP-ASVS-V2.7.6",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that the initial authentication code is generated by a secure random number generator, containing at least 20 bits of entropy (typically 4 random alphanumeric characters or 6 random digits is sufficient)."
     },
     {
       "id": "OWASP-ASVS-V2.7.7",
+      "scope": [
+        "Authentication",
+        "Out-of-Band Verifier"
+      ],
       "description": "Verify that the initial authentication code is protected against brute force attacks by using either rate limiting or a code with at least 64 bits of entropy."
     },
     {
       "id": "OWASP-ASVS-V2.8.1",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify that time-based OTPs have a defined lifetime before expiring."
     },
     {
       "id": "OWASP-ASVS-V2.8.2",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify that symmetric keys used to verify submitted OTPs are highly protected, such as by using a hardware security module or secure operating system based key storage."
     },
     {
       "id": "OWASP-ASVS-V2.8.3",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify that approved cryptographic algorithms are used in the generation, seeding, and verification of OTPs."
     },
     {
       "id": "OWASP-ASVS-V2.8.4",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify that time-based OTP can be used only once within the validity period."
     },
     {
       "id": "OWASP-ASVS-V2.8.5",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify that if a time-based multi-factor OTP token is re-used during the validity period, it is logged and rejected with secure notifications being sent to the holder of the device."
     },
     {
       "id": "OWASP-ASVS-V2.8.6",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify physical single-factor OTP generator can be revoked in case of theft or other loss. Ensure that revocation is immediately effective across logged in sessions, regardless of location."
     },
     {
       "id": "OWASP-ASVS-V2.8.7",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Verify that biometric authenticators are only used as secondary factors together with either something you have or something you know."
     },
     {
       "id": "OWASP-ASVS-V2.8.8",
+      "scope": [
+        "Authentication",
+        "One-Time Verifier"
+      ],
       "description": "Ensure that generation of the time-based multi-factor OTP token is based on the server's system time and not the client's machine."
     },
     {
       "id": "OWASP-ASVS-V2.9.1",
+      "scope": [
+        "Authentication",
+        "Cryptographic Verifier"
+      ],
       "description": "Verify that cryptographic keys used in verification are stored securely and protected against disclosure, such as using a Trusted Platform Module (TPM) or Hardware Security Module (HSM), or an OS service that can use this secure storage."
     },
     {
       "id": "OWASP-ASVS-V2.9.2",
+      "scope": [
+        "Authentication",
+        "Cryptographic Verifier"
+      ],
       "description": "Verify that the challenge nonce is at least 64 bits in length, and statistically unique or unique over the lifetime of the cryptographic device."
     },
     {
       "id": "OWASP-ASVS-V2.9.3",
+      "scope": [
+        "Authentication",
+        "Cryptographic Verifier"
+      ],
       "description": "Verify that approved cryptographic algorithms are used in the generation, seeding, and verification of the cryptographic keys."
     },
     {
       "id": "OWASP-ASVS-V2.10.1",
+      "scope": [
+        "Authentication",
+        "Service Authentication"
+      ],
       "description": "Verify that intra-service secrets do not rely on unchanging credentials such as passwords, API keys or shared accounts with privileged access."
     },
     {
       "id": "OWASP-ASVS-V2.10.2",
+      "scope": [
+        "Authentication",
+        "Service Authentication"
+      ],
       "description": "Verify that if a credential has to be used for service authentication, the credential being used by the consumer is not a default credential (e.g. root/root or admin/admin are default in some services during installation)."
     },
     {
       "id": "OWASP-ASVS-V2.10.4",
+      "scope": [
+        "Authentication",
+        "Service Authentication"
+      ],
       "description": "Verify passwords, integrations with databases and third-party systems, seeds and internal secrets, and API keys are managed securely and not included in the source code or stored within source code repositories. Such storage should resist offline attacks. The use of a secure software key store (L1), hardware TPM, or an HSM (L3) is recommended for password storage."
     },
     {
       "id": "OWASP-ASVS-V3.1.2",
+      "scope": [
+        "Session Management",
+        "Fundamental Session Management Security"
+      ],
       "description": "Verify that the application performs all session token verification using a trusted, back-end service."
     },
     {
       "id": "OWASP-ASVS-V3.1.3",
+      "scope": [
+        "Session Management",
+        "Fundamental Session Management Security"
+      ],
       "description": "Verify that the application uses either cryptographically signed or opaque tokens for session management. Static API secrets and keys should be avoided."
     },
     {
       "id": "OWASP-ASVS-V3.2.1",
+      "scope": [
+        "Session Management",
+        "Session Binding"
+      ],
       "description": "Verify the application generates a new session token on user authentication, including re-authentication, and terminates the current session token."
     },
     {
       "id": "OWASP-ASVS-V3.2.2",
+      "scope": [
+        "Session Management",
+        "Session Binding"
+      ],
       "description": "Verify that opaque session tokens possess at least 128 bits of entropy."
     },
     {
       "id": "OWASP-ASVS-V3.2.4",
+      "scope": [
+        "Session Management",
+        "Session Binding"
+      ],
       "description": "Verify that opaque session tokens are generated using a secure random function."
     },
     {
       "id": "OWASP-ASVS-V3.2.5",
+      "scope": [
+        "Session Management",
+        "Session Binding"
+      ],
       "description": "Verify that creating a session for the application requires the user's consent and that the application is protected against a CSRF-style attack where a new application session for the user is created via SSO without user interaction."
     },
     {
       "id": "OWASP-ASVS-V3.3.2",
+      "scope": [
+        "Session Management",
+        "Session Timeout"
+      ],
       "description": "Verify that there is an absolute maximum session lifetime such that re-authentication is required at least every 30 days for L1 applications or every 12 hours for L2 and L3 applications."
     },
     {
       "id": "OWASP-ASVS-V3.3.5",
+      "scope": [
+        "Session Management",
+        "Session Timeout"
+      ],
       "description": "Verify that re-authentication is required after 30 minutes of inactivity for L2 applications or after 15 minutes of inactivity for L3 applications."
     },
     {
       "id": "OWASP-ASVS-V3.4.1",
+      "scope": [
+        "Session Management",
+        "Cookie-based Session Management"
+      ],
       "description": "Verify that cookie-based session tokens have the 'Secure' attribute set."
     },
     {
       "id": "OWASP-ASVS-V3.4.2",
+      "scope": [
+        "Session Management",
+        "Cookie-based Session Management"
+      ],
       "description": "Verify that cookie-based session tokens are not readable by client-side scripts. The session token cookie should have the 'HttpOnly' attribute set and the session token value should only be transferred to the client via the Set-Cookie header."
     },
     {
       "id": "OWASP-ASVS-V3.4.3",
+      "scope": [
+        "Session Management",
+        "Cookie-based Session Management"
+      ],
       "description": "Verify that cookie-based session tokens utilize the 'SameSite' attribute to limit exposure to cross-site request forgery attacks."
     },
     {
       "id": "OWASP-ASVS-V3.4.4",
+      "scope": [
+        "Session Management",
+        "Cookie-based Session Management"
+      ],
       "description": "Verify that cookie-based session tokens use the \"__Host-\" prefix so cookies are only sent to the host that initially set the cookie."
     },
     {
       "id": "OWASP-ASVS-V3.5.1",
+      "scope": [
+        "Session Management",
+        "Token-based Session Management"
+      ],
       "description": "Verify that the application allows users to revoke OAuth tokens that form trust relationships with linked applications."
     },
     {
       "id": "OWASP-ASVS-V3.5.3",
+      "scope": [
+        "Session Management",
+        "Token-based Session Management"
+      ],
       "description": "Verify that stateless session tokens make use of a digital signature to protect against tampering and this is checked before processing it further."
     },
     {
       "id": "OWASP-ASVS-V3.5.4",
+      "scope": [
+        "Session Management",
+        "Token-based Session Management"
+      ],
       "description": "Verify that stateless tokens are checked for expiration before processing them further."
     },
     {
       "id": "OWASP-ASVS-V3.5.5",
+      "scope": [
+        "Session Management",
+        "Token-based Session Management"
+      ],
       "description": "Verify that only allow-listed signing algorithms are allowed for a stateless token."
     },
     {
       "id": "OWASP-ASVS-V3.5.6",
+      "scope": [
+        "Session Management",
+        "Token-based Session Management"
+      ],
       "description": "Verify that other, security-sensitive attributes of a stateless token are being verified. For example, in a JWT this may include issuer, subject, and audience."
     },
     {
       "id": "OWASP-ASVS-V3.5.7",
+      "scope": [
+        "Session Management",
+        "Token-based Session Management"
+      ],
       "description": "Verify that all active stateless tokens, which are being relied upon for access control decisions, are revoked when admins change the entitlements or roles of the user."
     },
     {
       "id": "OWASP-ASVS-V3.6.1",
+      "scope": [
+        "Session Management",
+        "Federated Re-authentication"
+      ],
       "description": "Verify that Relying Parties (RPs) specify the maximum authentication time to Credential Service Providers (CSPs) and that CSPs re-authenticate the user if they haven't used a session within that period."
     },
     {
       "id": "OWASP-ASVS-V3.6.2",
+      "scope": [
+        "Session Management",
+        "Federated Re-authentication"
+      ],
       "description": "Verify that Credential Service Providers (CSPs) inform Relying Parties (RPs) of the last authentication event, to allow RPs to determine if they need to re-authenticate the user."
     },
     {
       "id": "OWASP-ASVS-V3.7.1",
+      "scope": [
+        "Session Management",
+        "Defenses Against Session Management Exploits"
+      ],
       "description": "Verify that the application requires re-authentication or secondary verification before allowing highly sensitive transactions or modifications to account profile or authentication settings."
     },
     {
       "id": "OWASP-ASVS-V3.8.1",
+      "scope": [
+        "Session Management",
+        "Session Termination"
+      ],
       "description": "Verify that logout and expiration terminate the user's session, such that the back button or a downstream relying party cannot resume an authenticated session."
     },
     {
       "id": "OWASP-ASVS-V3.8.2",
+      "scope": [
+        "Session Management",
+        "Session Termination"
+      ],
       "description": "Verify that the application gives the option to terminate all other active sessions after a successful change or removal of any authentication factor (including password change via reset or recovery and, if present, an MFA settings update)."
     },
     {
       "id": "OWASP-ASVS-V3.8.3",
+      "scope": [
+        "Session Management",
+        "Session Termination"
+      ],
       "description": "Verify that users are able to view and (having re-entered login credentials) terminate any or all currently active sessions."
     },
     {
       "id": "OWASP-ASVS-V3.8.4",
+      "scope": [
+        "Session Management",
+        "Session Termination"
+      ],
       "description": "Verify that all pages that require authentication have easy and visible access to logout functionality."
     },
     {
       "id": "OWASP-ASVS-V3.8.5",
+      "scope": [
+        "Session Management",
+        "Session Termination"
+      ],
       "description": "Verify that the application terminates all active sessions when a user account is disabled or deleted (such as an employee leaving the company)."
     },
     {
       "id": "OWASP-ASVS-V3.8.6",
+      "scope": [
+        "Session Management",
+        "Session Termination"
+      ],
       "description": "Verify that application administrators are able to terminate active sessions for an individual user or for all users."
     },
     {
       "id": "OWASP-ASVS-V4.1.1",
+      "scope": [
+        "Access Control",
+        "General Access Control Design"
+      ],
       "description": "Verify that the application enforces access control rules at a trusted service layer and doesn't rely on controls which an untrusted user could manipulate such as client-side JavaScript."
     },
     {
       "id": "OWASP-ASVS-V4.1.2",
+      "scope": [
+        "Access Control",
+        "General Access Control Design"
+      ],
       "description": "Verify that specific controls exist to prevent end users from making changes to access control policy information, such as user roles, permissions, and feature access levels, unless they are explicitly authorized to do so."
     },
     {
       "id": "OWASP-ASVS-V4.1.3",
+      "scope": [
+        "Access Control",
+        "General Access Control Design"
+      ],
       "description": "Verify that the principle of least privilege exists - users should only be able to access functions, data files, URLs, controllers, services, and other resources, for which they possess specific authorization. This implies protection against spoofing and elevation of privilege."
     },
     {
       "id": "OWASP-ASVS-V4.1.5",
+      "scope": [
+        "Access Control",
+        "General Access Control Design"
+      ],
       "description": "Verify that access controls fail securely by denying access, including when an exception occurs."
     },
     {
       "id": "OWASP-ASVS-V4.2.1",
+      "scope": [
+        "Access Control",
+        "Operation Level Access Control"
+      ],
       "description": "Verify that sensitive data and APIs are protected against Insecure Direct Object Reference (IDOR) attacks targeting creation, reading, updating and deletion of records, such as creating or updating someone else's record, viewing everyone's records, or deleting all records."
     },
     {
       "id": "OWASP-ASVS-V4.3.1",
+      "scope": [
+        "Access Control",
+        "Other Access Control Considerations"
+      ],
       "description": "Verify administrative interfaces can only be logically accessed from trusted endpoints or locations. For example, restricting access to bastion or jump hosts, trusted admin workstations or endpoints (e.g., device authentication), administrative LANs, etc."
     },
     {
       "id": "OWASP-ASVS-V4.3.3",
+      "scope": [
+        "Access Control",
+        "Other Access Control Considerations"
+      ],
       "description": "Verify that, if the application allows changing highly sensitive configurations around passwords or connection parameters for integrations with databases and third-party systems, they are protected by extra controls such as re-authentication or multi-user approval."
     },
     {
       "id": "OWASP-ASVS-V5.1.1",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Input Validation"
+      ],
       "description": "Verify that the application has defenses against HTTP parameter pollution attacks, particularly if the application framework makes no distinction about the source of request parameters (query string, body parameters, cookies, or headers)."
     },
     {
       "id": "OWASP-ASVS-V5.1.2",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Input Validation"
+      ],
       "description": "Verify that frameworks protect against mass parameter assignment attacks, or that the application has countermeasures to protect against unsafe parameter assignment, such as marking fields private or similar."
     },
     {
       "id": "OWASP-ASVS-V5.1.3",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Input Validation"
+      ],
       "description": "Verify that all input is validated using positive validation, using an allowed list of values or patterns."
     },
     {
       "id": "OWASP-ASVS-V5.1.4",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Input Validation"
+      ],
       "description": "Verify that structured data is strongly typed and validated against a defined schema including allowed characters, length and pattern (e.g. credit card numbers, e-mail addresses, telephone numbers, or validating that two related fields are reasonable, such as checking that suburb and zipcode match)."
     },
     {
       "id": "OWASP-ASVS-V5.1.5",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Input Validation"
+      ],
       "description": "Verify that the application will only automatically redirect the user to a different URL directly from an application URL where the destination appears on an allow list."
     },
     {
       "id": "OWASP-ASVS-V5.1.6",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Input Validation"
+      ],
       "description": "Verify that untrusted input is validated for length before being included in a cookie (including as part of a JWT) and that the cookie name and value length combined are not over 4096 bytes."
     },
     {
       "id": "OWASP-ASVS-V5.2.1",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that all untrusted HTML input from WYSIWYG editors or similar is properly sanitized using a well-known and secure HTML sanitization library or framework feature."
     },
     {
       "id": "OWASP-ASVS-V5.2.2",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that unstructured data is sanitized to enforce safety measures such as allowed characters and length."
     },
     {
       "id": "OWASP-ASVS-V5.2.3",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application sanitizes user input before passing to mail systems to protect against SMTP or IMAP injection."
     },
     {
       "id": "OWASP-ASVS-V5.2.4",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application avoids the use of eval() or other dynamic code execution features. Where there is no alternative, any user input being included must be sanitized or sandboxed before being executed."
     },
     {
       "id": "OWASP-ASVS-V5.2.5",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application protects against template injection attacks by not allowing templates to be built based on untrusted input. Where there is no alternative, any untrusted input being included dynamically during template creation must be sanitized or strictly validated."
     },
     {
       "id": "OWASP-ASVS-V5.2.6",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application protects against SSRF attacks, by validating or sanitizing untrusted data or HTTP file metadata, such as filenames and URL input fields, and uses allow lists of protocols, domains, paths and ports."
     },
     {
       "id": "OWASP-ASVS-V5.2.7",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application sanitizes, disables, or sandboxes user-supplied Scalable Vector Graphics (SVG) scriptable content, especially as they relate to XSS resulting from inline scripts, and foreignObject."
     },
     {
       "id": "OWASP-ASVS-V5.2.8",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application sanitizes, disables, or sandboxes user-supplied scriptable or expression template language content, such as Markdown, CSS or XSL stylesheets, BBCode, or similar."
     },
     {
       "id": "OWASP-ASVS-V5.2.9",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application uses slashes to correctly escape special characters being used in regular expressions to ensure they are not misinterpreted as control characters."
     },
     {
       "id": "OWASP-ASVS-V5.2.10",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that regular expressions are free from elements causing exponential backtracking, and ensure untrusted input is sanitized to mitigate ReDoS or Runaway Regex attacks."
     },
     {
       "id": "OWASP-ASVS-V5.2.11",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application appropriately sanitizes untrusted input before use in Java Naming and Directory Interface (JNDI) queries and that JNDI is configured as securely as possible to prevent JNDI injection attacks."
     },
     {
       "id": "OWASP-ASVS-V5.2.12",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Sanitization and Sandboxing"
+      ],
       "description": "Verify that the application sanitizes content before it is sent to memcache to prevent injection attacks."
     },
     {
       "id": "OWASP-ASVS-V5.3.1",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that output encoding is relevant for the interpreter and context required. For example, use encoders specifically for HTML values, HTML attributes, JavaScript, CSS, URL parameters, HTTP headers, SMTP, and others as the context requires, especially from untrusted inputs (e.g. names with Unicode or apostrophes, such as ねこ or O'Hara)."
     },
     {
       "id": "OWASP-ASVS-V5.3.3",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that context-aware, preferably automated - or at worst, manual - output escaping protects against reflected, stored, and DOM based XSS."
     },
     {
       "id": "OWASP-ASVS-V5.3.4",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that data selection or database queries (e.g. SQL, HQL, NoSQL, Cypher) use parameterized queries, ORMs, entity frameworks, or are otherwise protected from database injection attacks."
     },
     {
       "id": "OWASP-ASVS-V5.3.6",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that the application protects against JSON injection attacks."
     },
     {
       "id": "OWASP-ASVS-V5.3.7",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that the application protects against LDAP injection vulnerabilities, or that specific security controls to prevent LDAP injection have been implemented."
     },
     {
       "id": "OWASP-ASVS-V5.3.8",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that the application protects against OS command injection and that operating system calls use parameterized OS queries or use contextual command line output encoding."
     },
     {
       "id": "OWASP-ASVS-V5.3.10",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that the application protects against XPath injection or XML injection attacks."
     },
     {
       "id": "OWASP-ASVS-V5.3.11",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that the application is protected against CSV and Formula Injection. The application should follow the escaping rules defined in RFC4180 2.6 and 2.7 when exporting CSV files. The application should escape special characters including '=', '+', '-', '@' '\\t' (tab) and '\\00' (null character) using a single quote, if they are the first character in a field, when exporting CSV files and other spreadsheet formats such as xls, xlsx, odf."
     },
     {
       "id": "OWASP-ASVS-V5.3.12",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Output Encoding and Injection Prevention"
+      ],
       "description": "Verify that LaTeX processors are configured securely (such as not using the \"--shell-escape\" flag) and command allow-listing is used to prevent LaTeX injection attacks."
     },
     {
       "id": "OWASP-ASVS-V5.4.1",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Memory, String, and Unmanaged Code"
+      ],
       "description": "Verify that the application uses memory-safe string, safer memory copy and pointer arithmetic to detect or prevent stack, buffer, or heap overflows."
     },
     {
       "id": "OWASP-ASVS-V5.4.2",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Memory, String, and Unmanaged Code"
+      ],
       "description": "Verify that format strings do not take potentially hostile input, and are constant."
     },
     {
       "id": "OWASP-ASVS-V5.4.3",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Memory, String, and Unmanaged Code"
+      ],
       "description": "Verify that sign, range, and input validation techniques are used to prevent integer overflows."
     },
     {
       "id": "OWASP-ASVS-V5.5.2",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Deserialization Prevention"
+      ],
       "description": "Verify that the application correctly restricts XML parsers to only use the most restrictive configuration possible and to ensure that unsafe features such as resolving external entities are disabled to prevent XML eXternal Entity (XXE) attacks."
     },
     {
       "id": "OWASP-ASVS-V5.5.3",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Deserialization Prevention"
+      ],
       "description": "Verify that deserialization is not used when communicating with untrusted clients. If this is not possible, ensure that deserialization is performed safely, for example, by only allowing a allow-list of object types or not allowing the client to define the object type to deserialize to, in order to prevent deserialization attacks."
     },
     {
       "id": "OWASP-ASVS-V5.5.4",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Deserialization Prevention"
+      ],
       "description": "Verify that when parsing JSON in browsers or JavaScript-based backends, JSON.parse is used to parse the JSON document. Do not use eval() to parse JSON."
     },
     {
       "id": "OWASP-ASVS-V5.5.5",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Deserialization Prevention"
+      ],
       "description": "Verify that different parsers used in the application for the same data type (e.g. JSON parsers, XML parsers, URL parsers), perform parsing in a consistent way and use the same character encoding mechanism to avoid issues such as JSON Interoperability vulnerabilities or different URI or file parsing behavior being exploited in Remote File Inclusion (RFI) or Server-side Request Forgery (SSRF) attacks."
     },
     {
       "id": "OWASP-ASVS-V5.6.1",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Validation and Sanitization Architecture"
+      ],
       "description": "Verify that input is decoded or unescaped into a canonical form only once and that this is done before processing the input further, for example it is not performed after input validation or sanitization."
     },
     {
       "id": "OWASP-ASVS-V5.6.2",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Validation and Sanitization Architecture"
+      ],
       "description": "Verify that the application is designed to enforce input validation at a trusted service layer. While client-side validation improves usability, security must not rely on it."
     },
     {
       "id": "OWASP-ASVS-V5.6.3",
+      "scope": [
+        "Validation, Sanitization and Encoding",
+        "Validation and Sanitization Architecture"
+      ],
       "description": "Verify that the application performs output encoding and escaping either as a final step before being used by the interpreter for which it is intended or by the interpreter itself."
     },
     {
       "id": "OWASP-ASVS-V6.1.1",
+      "scope": [
+        "Stored Cryptography",
+        "Data Classification"
+      ],
       "description": "Verify that regulated private data is stored encrypted while at rest, such as Personally Identifiable Information (PII), sensitive personal information, or data assessed likely to be subject to EU's GDPR."
     },
     {
       "id": "OWASP-ASVS-V6.1.2",
+      "scope": [
+        "Stored Cryptography",
+        "Data Classification"
+      ],
       "description": "Verify that regulated health data is stored encrypted while at rest, such as medical records, medical device details, or de-anonymized research records."
     },
     {
       "id": "OWASP-ASVS-V6.1.3",
+      "scope": [
+        "Stored Cryptography",
+        "Data Classification"
+      ],
       "description": "Verify that regulated financial data is stored encrypted while at rest, such as financial accounts, defaults or credit history, tax records, pay history, beneficiaries, or de-anonymized market or research records."
     },
     {
       "id": "OWASP-ASVS-V6.2.1",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that all cryptographic modules fail securely, and errors are handled in a way that does not enable Padding Oracle attacks."
     },
     {
       "id": "OWASP-ASVS-V6.2.2",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that industry proven or government approved cryptographic algorithms, modes, and libraries are used, instead of custom coded cryptography."
     },
     {
       "id": "OWASP-ASVS-V6.2.4",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that random number, encryption or hashing algorithms, key lengths, rounds, ciphers or modes, can be reconfigured, upgraded, or swapped at any time, to protect against cryptographic breaks."
     },
     {
       "id": "OWASP-ASVS-V6.2.5",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that known insecure block modes (i.e. ECB, etc.), padding modes (i.e. PKCS#1 v1.5, etc.), ciphers with small block sizes (i.e. Triple-DES, Blowfish, etc.), and weak hashing algorithms (i.e. MD5, SHA1, etc.) are not used."
     },
     {
       "id": "OWASP-ASVS-V6.2.6",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that nonces, initialization vectors, and other single-use numbers are not used for more than one encryption key/data-element pair. The method of generation must be appropriate for the algorithm being used."
     },
     {
       "id": "OWASP-ASVS-V6.2.7",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that encrypted data is authenticated via signatures, authenticated cipher modes, or HMAC to ensure that ciphertext is not altered by an unauthorized party."
     },
     {
       "id": "OWASP-ASVS-V6.2.8",
+      "scope": [
+        "Stored Cryptography",
+        "Algorithms"
+      ],
       "description": "Verify that all cryptographic operations are constant-time, with no 'short-circuit' operations in comparisons, calculations, or returns, to avoid leaking information."
     },
     {
       "id": "OWASP-ASVS-V6.3.1",
+      "scope": [
+        "Stored Cryptography",
+        "Random Values"
+      ],
       "description": "Verify that all random numbers, random file names, and random strings are generated using a cryptographically-secure pseudo-random number generator (CSPRNG) when these random values are intended to be not guessable by an attacker."
     },
     {
       "id": "OWASP-ASVS-V6.3.2",
+      "scope": [
+        "Stored Cryptography",
+        "Random Values"
+      ],
       "description": "Verify that GUIDs are created with an implementation of the GUID v4 algorithm which utilizes a cryptographically-secure pseudo-random number generator (CSPRNG). GUIDs created using other algorithm versions or using insufficiently secure pseudo-random number generators may be predictable."
     },
     {
       "id": "OWASP-ASVS-V6.3.3",
+      "scope": [
+        "Stored Cryptography",
+        "Random Values"
+      ],
       "description": "Verify that random numbers are created with proper entropy even when the application is under heavy load, or that the application degrades gracefully in such circumstances."
     },
     {
       "id": "OWASP-ASVS-V6.4.1",
+      "scope": [
+        "Stored Cryptography",
+        "Secret Management"
+      ],
       "description": "Verify that a secrets management solution such as a key vault is used to securely create, store, control access to and destroy back-end secrets such as service account or 3rd party application credentials."
     },
     {
       "id": "OWASP-ASVS-V6.4.2",
+      "scope": [
+        "Stored Cryptography",
+        "Secret Management"
+      ],
       "description": "Verify that key material is not exposed to the application (neither the front-end nor the back-end) but instead uses an isolated security module like a vault for cryptographic operations."
     },
     {
       "id": "OWASP-ASVS-V7.1.1",
+      "scope": [
+        "Error Handling and Logging",
+        "General Logging"
+      ],
       "description": "Verify that the application does not log credentials or payment details. Session tokens should only be stored in logs in an irreversible, hashed form."
     },
     {
       "id": "OWASP-ASVS-V7.1.2",
+      "scope": [
+        "Error Handling and Logging",
+        "General Logging"
+      ],
       "description": "Verify that the application does not log other sensitive data as defined under local privacy laws or relevant security policy."
     },
     {
       "id": "OWASP-ASVS-V7.1.4",
+      "scope": [
+        "Error Handling and Logging",
+        "General Logging"
+      ],
       "description": "Verify that each log entry includes necessary metadata that would allow for a detailed investigation of the timeline when an event happens."
     },
     {
       "id": "OWASP-ASVS-V7.1.5",
+      "scope": [
+        "Error Handling and Logging",
+        "General Logging"
+      ],
       "description": "Verify that time sources are synchronized to the correct time and time zone. Strongly consider logging only in UTC if systems are global to assist with post-incident forensic analysis."
     },
     {
       "id": "OWASP-ASVS-V7.1.6",
+      "scope": [
+        "Error Handling and Logging",
+        "General Logging"
+      ],
       "description": "Verify that the application only stores or broadcasts logs to the files and services that are documented in the log inventory."
     },
     {
       "id": "OWASP-ASVS-V7.1.7",
+      "scope": [
+        "Error Handling and Logging",
+        "General Logging"
+      ],
       "description": "Verify that logs are readable and correlatable for the used log reader, preferably by using a common logging format."
     },
     {
       "id": "OWASP-ASVS-V7.2.1",
+      "scope": [
+        "Error Handling and Logging",
+        "Security Events"
+      ],
       "description": "Verify that all authentication decisions are logged."
     },
     {
       "id": "OWASP-ASVS-V7.2.2",
+      "scope": [
+        "Error Handling and Logging",
+        "Security Events"
+      ],
       "description": "Verify that all access control decisions can be logged and all failed decisions are logged."
     },
     {
       "id": "OWASP-ASVS-V7.2.3",
+      "scope": [
+        "Error Handling and Logging",
+        "Security Events"
+      ],
       "description": "Verify that the application logs security relevant events including deserialization failures, input validation failures and incorrect HTTP requests (including requests with an unexpected HTTP verb)."
     },
     {
       "id": "OWASP-ASVS-V7.2.4",
+      "scope": [
+        "Error Handling and Logging",
+        "Security Events"
+      ],
       "description": "Verify that backend TLS connection failures are logged."
     },
     {
       "id": "OWASP-ASVS-V7.3.1",
+      "scope": [
+        "Error Handling and Logging",
+        "Log Protection"
+      ],
       "description": "Verify that all logging components appropriately encode data to prevent log injection."
     },
     {
       "id": "OWASP-ASVS-V7.3.3",
+      "scope": [
+        "Error Handling and Logging",
+        "Log Protection"
+      ],
       "description": "Verify that logs are protected from unauthorized access and cannot be modified."
     },
     {
       "id": "OWASP-ASVS-V7.3.5",
+      "scope": [
+        "Error Handling and Logging",
+        "Log Protection"
+      ],
       "description": "Verify that logs are securely transmitted to a preferably remote system for analysis, detection, alerting, and escalation."
     },
     {
       "id": "OWASP-ASVS-V7.4.1",
+      "scope": [
+        "Error Handling and Logging",
+        "Error Handling"
+      ],
       "description": "Verify that a generic message is shown when an unexpected or security sensitive error occurs, potentially with a unique ID which support personnel can use to investigate."
     },
     {
       "id": "OWASP-ASVS-V7.4.2",
+      "scope": [
+        "Error Handling and Logging",
+        "Error Handling"
+      ],
       "description": "Verify that a consistent and standardized exception handling mechanism (or a functional equivalent) is used across the codebase."
     },
     {
       "id": "OWASP-ASVS-V7.4.3",
+      "scope": [
+        "Error Handling and Logging",
+        "Error Handling"
+      ],
       "description": "Verify that a \"last resort\" error handler is defined which will catch all unhandled exceptions."
     },
     {
       "id": "OWASP-ASVS-V7.4.4",
+      "scope": [
+        "Error Handling and Logging",
+        "Error Handling"
+      ],
       "description": "Verify that the application is designed in a way that a failure to access external resources does not result in the entire application failing, for example using the circuit breaker pattern."
     },
     {
       "id": "OWASP-ASVS-V8.1.1",
+      "scope": [
+        "Data Protection",
+        "General Data Protection"
+      ],
       "description": "Verify that the application prevents sensitive data from being cached in server components such as load balancers and application caches or ensures that the data is securely purged after use."
     },
     {
       "id": "OWASP-ASVS-V8.1.4",
+      "scope": [
+        "Data Protection",
+        "General Data Protection"
+      ],
       "description": "Verify the application can detect and alert on abnormal numbers of requests, such as by IP, user, total per hour or day, or whatever makes sense for the application."
     },
     {
       "id": "OWASP-ASVS-V8.1.7",
+      "scope": [
+        "Data Protection",
+        "General Data Protection"
+      ],
       "description": "Verify that caching mechanisms are configured to only cache responses which have the correct content type and do not contain sensitive, dynamic content. The web server should return a 404 or 302 response when an non-existent file is accessed rather than returning a different, valid file. This should prevent Web Cache Deception attacks."
     },
     {
       "id": "OWASP-ASVS-V8.1.8",
+      "scope": [
+        "Data Protection",
+        "General Data Protection"
+      ],
       "description": "Verify that defined sensitive data is not sent to untrusted parties (e.g. user trackers) to prevent unwanted collection of data outside of the application's control."
     },
     {
       "id": "OWASP-ASVS-V8.2.1",
+      "scope": [
+        "Data Protection",
+        "Client-side Data Protection"
+      ],
       "description": "Verify that the application sets sufficient anti-caching headers (i.e. Cache-Control: no-store) so that sensitive data is not cached in browsers."
     },
     {
       "id": "OWASP-ASVS-V8.2.2",
+      "scope": [
+        "Data Protection",
+        "Client-side Data Protection"
+      ],
       "description": "Verify that data stored in browser storage (such as localStorage, sessionStorage, IndexedDB, or cookies) does not contain sensitive data, with the exception of session tokens which should be stored in either cookies or sessionStorage."
     },
     {
       "id": "OWASP-ASVS-V8.2.3",
+      "scope": [
+        "Data Protection",
+        "Client-side Data Protection"
+      ],
       "description": "Verify that authenticated data is cleared from client storage, such as the browser DOM, after the client or session is terminated. The \"Clear-Site-Data header\" may be able to help with this but the client-side should also be able to clear up if the server connection is lost."
     },
     {
       "id": "OWASP-ASVS-V8.3.1",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that sensitive data is only sent to the server in the HTTP message body or headers and that the URL and query string do not contain sensitive information, such as an API key or session token."
     },
     {
       "id": "OWASP-ASVS-V8.3.2",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that users have a method to remove their data on demand."
     },
     {
       "id": "OWASP-ASVS-V8.3.3",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that users are provided clear language regarding collection and use of supplied personal information and that users have provided opt-in consent for the use of that data before it is used in any way."
     },
     {
       "id": "OWASP-ASVS-V8.3.5",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify accessing sensitive data is audited (without logging the sensitive data itself), if the data is collected under relevant data protection directives or where logging of access is required."
     },
     {
       "id": "OWASP-ASVS-V8.3.7",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that sensitive or private information that is required to be encrypted, is encrypted using approved algorithms that provide both confidentiality and integrity."
     },
     {
       "id": "OWASP-ASVS-V8.3.8",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that sensitive personal information is subject to data retention classification, such that old or out of date data is deleted automatically, on a schedule, or as the situation requires."
     },
     {
       "id": "OWASP-ASVS-V8.3.9",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that users have a method to export their data on demand."
     },
     {
       "id": "OWASP-ASVS-V8.3.10",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that sensitive information is removed from the metadata of user-submitted files unless storage is consented to by the user."
     },
     {
       "id": "OWASP-ASVS-V8.3.11",
+      "scope": [
+        "Data Protection",
+        "Sensitive Private Data"
+      ],
       "description": "Verify that the application does not ask for unnecessary or excessive permissions to privacy related features or sensors, such as cameras, microphones, or location."
     },
     {
       "id": "OWASP-ASVS-V9.1.1",
+      "scope": [
+        "Communication Encryption",
+        "HTTPS Communication with External Facing Services"
+      ],
       "description": "Verify that TLS is used for all connectivity between a client and external facing, HTTP-based services, and does not fall back to insecure or unencrypted communications."
     },
     {
       "id": "OWASP-ASVS-V9.1.4",
+      "scope": [
+        "Communication Encryption",
+        "HTTPS Communication with External Facing Services"
+      ],
       "description": "Verify that external facing services use publically trusted TLS certificates."
     },
     {
       "id": "OWASP-ASVS-V9.2.2",
+      "scope": [
+        "Communication Encryption",
+        "General Service to Service Communication Security"
+      ],
       "description": "Verify that an encrypted protocol such as TLS is used for all inbound and outbound connections to and from the application, including monitoring systems, management tools, remote access and SSH, middleware, databases, mainframes, partner systems, or external APIs. The server must not fall back to insecure or unencrypted protocols."
     },
     {
       "id": "OWASP-ASVS-V9.3.1",
+      "scope": [
+        "Communication Encryption",
+        "HTTPS Communication between Internal Services"
+      ],
       "description": "Verify that TLS or another appropriate transport encryption mechanism used for all connectivity between internal, HTTP-based services within the application, and does not fall back to insecure or unencrypted communications."
     },
     {
       "id": "OWASP-ASVS-V9.3.2",
+      "scope": [
+        "Communication Encryption",
+        "HTTPS Communication between Internal Services"
+      ],
       "description": "Verify that TLS connections between internal services use trusted certificates. Where internally generated or self-signed certificates are used, the consuming service must be configured to only trust specific internal CAs and specific self-signed certificates. All others should be rejected."
     },
     {
       "id": "OWASP-ASVS-V9.3.3",
+      "scope": [
+        "Communication Encryption",
+        "HTTPS Communication between Internal Services"
+      ],
       "description": "Verify that mutual TLS (mTLS) is used by services communicating internally within a system or \"intra-service communications\" to ensure all the involved parties at each end of a network connection are who they claim to be."
     },
     {
       "id": "OWASP-ASVS-V9.4.1",
+      "scope": [
+        "Communication Encryption",
+        "General TLS Security Guidance"
+      ],
       "description": "Verify that only the latest recommended cipher suites are enabled, with the strongest cipher suites set as preferred."
     },
     {
       "id": "OWASP-ASVS-V9.4.2",
+      "scope": [
+        "Communication Encryption",
+        "General TLS Security Guidance"
+      ],
       "description": "Verify that only the latest recommended versions of the TLS protocol are enabled, such as TLS 1.2 and TLS 1.3. The latest version of the TLS protocol should be the preferred option."
     },
     {
       "id": "OWASP-ASVS-V9.4.3",
+      "scope": [
+        "Communication Encryption",
+        "General TLS Security Guidance"
+      ],
       "description": "Verify that proper certification revocation, such as Online Certificate Status Protocol (OCSP) Stapling, is enabled and configured."
     },
     {
       "id": "OWASP-ASVS-V9.4.4",
+      "scope": [
+        "Communication Encryption",
+        "General TLS Security Guidance"
+      ],
       "description": "Verify that if TLS wildcard certificates are used, wildcard certificates from a non-production environment are not valid for a production environment."
     },
     {
       "id": "OWASP-ASVS-V10.2.1",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Malicious Code Search"
+      ],
       "description": "Verify that the application source code and third party libraries do not contain unauthorized phone home or data collection capabilities. Where such functionality exists, obtain the user's permission for it to operate before collecting any data."
     },
     {
       "id": "OWASP-ASVS-V10.2.3",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Malicious Code Search"
+      ],
       "description": "Verify that the application source code and third party libraries do not contain back doors, such as hard-coded or additional undocumented accounts or keys, code obfuscation, undocumented binary blobs, rootkits, or anti-debugging, insecure debugging features, or otherwise out of date, insecure, or hidden functionality that could be used maliciously if discovered."
     },
     {
       "id": "OWASP-ASVS-V10.2.4",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Malicious Code Search"
+      ],
       "description": "Verify that the application source code and third party libraries do not contain time bombs by searching for date and time related functions."
     },
     {
       "id": "OWASP-ASVS-V10.2.5",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Malicious Code Search"
+      ],
       "description": "Verify that the application source code and third party libraries do not contain malicious code, such as salami attacks, logic bypasses, or logic bombs."
     },
     {
       "id": "OWASP-ASVS-V10.2.6",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Malicious Code Search"
+      ],
       "description": "Verify that the application source code and third party libraries do not contain Easter eggs or any other potentially unwanted functionality."
     },
     {
       "id": "OWASP-ASVS-V10.3.1",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Application Integrity"
+      ],
       "description": "Verify that if the application has a client or server auto-update feature, updates should be obtained over secure channels and digitally signed. The update code must validate the digital signature of the update before installing or executing the update."
     },
     {
       "id": "OWASP-ASVS-V10.3.2",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Application Integrity"
+      ],
       "description": "Verify that the application only loads or executes code, modules, content or plugins from sources not under the application's direct control or protection if it employs integrity protections, such as code signing."
     },
     {
       "id": "OWASP-ASVS-V10.4.1",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Defensive Coding"
+      ],
       "description": "Verify that the application explicitly ensures that variables are of the correct type and performs strict equality and comparator operations to avoid type juggling or confusion vulnerabilities caused by the application code making an assumption about a variable type."
     },
     {
       "id": "OWASP-ASVS-V10.4.2",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Defensive Coding"
+      ],
       "description": "Verify that the application avoids DOM clobbering when using client-side JavaScript by employing explicit variable declarations, performing strict type checking, avoiding storing global variables on the document object, and implementing namespace isolation."
     },
     {
       "id": "OWASP-ASVS-V10.4.3",
+      "scope": [
+        "Malicious and Insecure Code",
+        "Defensive Coding"
+      ],
       "description": "Verify that JavaScript code is written in a way that prevents prototype pollution, for example, by using Set() or Map() instead of object literals."
     },
     {
       "id": "OWASP-ASVS-V11.1.1",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that the application will only process business logic flows for the same user in sequential step order and without skipping steps."
     },
     {
       "id": "OWASP-ASVS-V11.1.3",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that the application has appropriate limits defined on a per user basis for specific business actions or transactions."
     },
     {
       "id": "OWASP-ASVS-V11.1.5",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that the application has globally defined business logic limits or validation to protect against likely business risks or threats, identified using threat modeling or similar methodologies."
     },
     {
       "id": "OWASP-ASVS-V11.1.6",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that the application uses synchronization and locking mechanisms for sensitive operations in order to keep internal data consistent, maintain user state, and prevent race conditions, such as 'time of check to time of use (TOCTOU)' vulnerabilities."
     },
     {
       "id": "OWASP-ASVS-V11.1.7",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that the application monitors for unusual events or activity from a business logic perspective. For example, attempts to perform actions out of order or actions which a normal user would never attempt."
     },
     {
       "id": "OWASP-ASVS-V11.1.8",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that the application has configurable alerting when automated attacks or unusual activity is detected."
     },
     {
       "id": "OWASP-ASVS-V11.1.9",
+      "scope": [
+        "Business Logic",
+        "Business Logic Security"
+      ],
       "description": "Verify that \"atomic transactions\" are being used at the business logic level such that either a business logic operation succeeds in its entirety, or it is rolled back to the previous correct state."
     },
     {
       "id": "OWASP-ASVS-V11.2.1",
+      "scope": [
+        "Business Logic",
+        "Anti-automation"
+      ],
       "description": "Verify that the application will only process business logic flows with all steps being processed in realistic human time, i.e. transactions are not submitted too quickly."
     },
     {
       "id": "OWASP-ASVS-V11.2.2",
+      "scope": [
+        "Business Logic",
+        "Anti-automation"
+      ],
       "description": "Verify that the application has anti-automation controls to protect against excessive calls to application functionality which could result in mass data exfiltration, junk data creation, resource quota exhaustion, rate limit breaches, out-of-band communication flooding, denial of service, overuse of an expensive resource, etc."
     },
     {
       "id": "OWASP-ASVS-V12.1.1",
+      "scope": [
+        "File and Resources",
+        "File Upload"
+      ],
       "description": "Verify that the application will only accept files of a size which it can process without causing a loss of performance or denial of service attack."
     },
     {
       "id": "OWASP-ASVS-V12.1.2",
+      "scope": [
+        "File and Resources",
+        "File Upload"
+      ],
       "description": "Verify that the application checks compressed files (e.g. zip, gz, docx, odt) against maximum allowed uncompressed size and against maximum number of files before uncompressing the file."
     },
     {
       "id": "OWASP-ASVS-V12.1.3",
+      "scope": [
+        "File and Resources",
+        "File Upload"
+      ],
       "description": "Verify that a file size quota and maximum number of files per user is enforced to ensure that a single user cannot fill up the storage with too many files, or excessively large files."
     },
     {
       "id": "OWASP-ASVS-V12.1.4",
+      "scope": [
+        "File and Resources",
+        "File Upload"
+      ],
       "description": "Verify that the application does not allow uploading compressed files containing symlinks unless this is specifically required (in which case it will be necessary to enforce an allow list of the files that can be symlinked to)."
     },
     {
       "id": "OWASP-ASVS-V12.2.1",
+      "scope": [
+        "File and Resources",
+        "File Integrity"
+      ],
       "description": "Verify that when the application is accepting a file, it checks that the file extension of the file matches an expected file extension and that it validates that the contents of the file match the type represented by that extension, including but not limited to checking the initial \"magic bytes\"."
     },
     {
       "id": "OWASP-ASVS-V12.2.2",
+      "scope": [
+        "File and Resources",
+        "File Integrity"
+      ],
       "description": "Verify that the application blocks uploaded images with a pixel size larger than the maximum allowed, to prevent pixel flood attacks."
     },
     {
       "id": "OWASP-ASVS-V12.3.1",
+      "scope": [
+        "File and Resources",
+        "File Execution"
+      ],
       "description": "Verify that user-submitted filename metadata is not used directly by system or framework filesystems and that a URL API is used to protect against path traversal."
     },
     {
       "id": "OWASP-ASVS-V12.3.2",
+      "scope": [
+        "File and Resources",
+        "File Execution"
+      ],
       "description": "Verify that user-submitted filename metadata is validated or ignored to prevent the disclosure, creation, updating or removal of local files (LFI)."
     },
     {
       "id": "OWASP-ASVS-V12.3.3",
+      "scope": [
+        "File and Resources",
+        "File Execution"
+      ],
       "description": "Verify that user-submitted filename metadata is validated or ignored to prevent the disclosure or execution of remote files via Remote File Inclusion (RFI) or Server-side Request Forgery (SSRF) attacks."
     },
     {
       "id": "OWASP-ASVS-V12.3.6",
+      "scope": [
+        "File and Resources",
+        "File Execution"
+      ],
       "description": "Verify that the application does not include and execute functionality from untrusted sources, such as unverified content distribution networks, JavaScript libraries, node npm libraries, or server-side DLLs."
     },
     {
       "id": "OWASP-ASVS-V12.3.7",
+      "scope": [
+        "File and Resources",
+        "File Execution"
+      ],
       "description": "Verify that server-side file processing such as file decompression ignores user-provided path information to prevent vulnerabilities such as zip slip."
     },
     {
       "id": "OWASP-ASVS-V12.4.2",
+      "scope": [
+        "File and Resources",
+        "File Storage"
+      ],
       "description": "Verify that files obtained from untrusted sources are scanned by antivirus scanners to prevent upload and serving of known malicious content."
     },
     {
       "id": "OWASP-ASVS-V12.5.3",
+      "scope": [
+        "File and Resources",
+        "File Download"
+      ],
       "description": "Verify that the application validates or ignores user-submitted filenames, including in a JSON, JSONP, or URL parameter and specifies a filename in the Content-Disposition header in the response."
     },
     {
       "id": "OWASP-ASVS-V12.7.1",
+      "scope": [
+        "File and Resources",
+        "Application Resources"
+      ],
       "description": "Verify that the application proactively releases system resources, such as database connections, open files, threads, etc, when it finishes using them to prevent resource exhaustion."
     },
     {
       "id": "OWASP-ASVS-V13.1.4",
+      "scope": [
+        "API and Web Service",
+        "Generic Web Service Security"
+      ],
       "description": "Verify that authorization decisions are made at both the URI, enforced by programmatic or declarative security at the controller or router, and at the resource level, enforced by model-based permissions."
     },
     {
       "id": "OWASP-ASVS-V13.1.6",
+      "scope": [
+        "API and Web Service",
+        "Generic Web Service Security"
+      ],
       "description": "Verify that per-message digital signatures are used to provide additional assurance on top of transport protections for requests or transactions which are highly sensitive or which traverse a number of systems."
     },
     {
       "id": "OWASP-ASVS-V13.2.2",
+      "scope": [
+        "API and Web Service",
+        "RESTful Web Service"
+      ],
       "description": "Verify that JSON schema validation is in place and verified before accepting input."
     },
     {
       "id": "OWASP-ASVS-V13.2.5",
+      "scope": [
+        "API and Web Service",
+        "RESTful Web Service"
+      ],
       "description": "Verify that REST services explicitly check the incoming Content-Type to be the expected one, such as application/xml or application/json."
     },
     {
       "id": "OWASP-ASVS-V13.3.1",
+      "scope": [
+        "API and Web Service",
+        "SOAP Web Service"
+      ],
       "description": "Verify that XSD schema validation takes place to ensure a properly formed XML document, followed by validation of each input field before any processing of that data takes place."
     },
     {
       "id": "OWASP-ASVS-V13.4.1",
+      "scope": [
+        "API and Web Service",
+        "GraphQL"
+      ],
       "description": "Verify that a query allow list or a combination of depth limiting and amount limiting is used to prevent GraphQL or data layer expression Denial of Service (DoS) as a result of expensive, nested queries. For more advanced scenarios, query cost analysis should be used."
     },
     {
       "id": "OWASP-ASVS-V13.4.2",
+      "scope": [
+        "API and Web Service",
+        "GraphQL"
+      ],
       "description": "Verify that GraphQL or other data layer authorization logic should be implemented at the business logic layer instead of the GraphQL layer."
     },
     {
       "id": "OWASP-ASVS-V13.4.3",
+      "scope": [
+        "API and Web Service",
+        "GraphQL"
+      ],
       "description": "Verify that GraphQL introspection queries are disabled in production environment unless the GraphQL API is meant to be used by other parties."
     },
     {
       "id": "OWASP-ASVS-V13.5.1",
+      "scope": [
+        "API and Web Service",
+        "WebSocket"
+      ],
       "description": "Verify that WebSocket Secure (wss) is used for all WebSocket connections."
     },
     {
       "id": "OWASP-ASVS-V13.5.2",
+      "scope": [
+        "API and Web Service",
+        "WebSocket"
+      ],
       "description": "Verify that, during the initial HTTP WebSocket handshake, the Origin header is checked against an allow list of authorized origins."
     },
     {
       "id": "OWASP-ASVS-V13.5.3",
+      "scope": [
+        "API and Web Service",
+        "WebSocket"
+      ],
       "description": "Verify that rate limiting is in place for WebSocket messages."
     },
     {
       "id": "OWASP-ASVS-V13.5.4",
+      "scope": [
+        "API and Web Service",
+        "WebSocket"
+      ],
       "description": "Verify that tokens possess at least 128 bits of entropy and are generated using approved cryptographic algorithms if session or channel tokens specific to WebSockets are being used."
     },
     {
       "id": "OWASP-ASVS-V13.5.5",
+      "scope": [
+        "API and Web Service",
+        "WebSocket"
+      ],
       "description": "Verify that the tokens are initially obtained from a response to secure POST request only, and are not sent by the server through the WebSocket connection if session or channel tokens specific to WebSockets are being used."
     },
     {
       "id": "OWASP-ASVS-V13.5.6",
+      "scope": [
+        "API and Web Service",
+        "WebSocket"
+      ],
       "description": "Verify that authentication is done before opening the WebSocket connection if only authenticated users should be able to use WebSockets."
     },
     {
       "id": "OWASP-ASVS-V14.1.1",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that the application build and deployment processes are performed in a secure and repeatable way, such as CI / CD automation, automated configuration management, and automated deployment scripts."
     },
     {
       "id": "OWASP-ASVS-V14.1.2",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that compiler flags are configured to enable all available buffer overflow protections and warnings, including stack randomization, data execution prevention, and to break the build if an unsafe pointer, memory, format string, integer, or string operations are found."
     },
     {
       "id": "OWASP-ASVS-V14.1.3",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that configuration hardening is performed on all 3rd party products, libraries, frameworks and services as per their individual recommendations."
     },
     {
       "id": "OWASP-ASVS-V14.1.5",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that deployed environments are short lived and frequently redeployed to a \"known good\" but updated state. Alternatively, long lived environments should use some form of \"drift prevention\" to ensure that deployed configurations are not changed to an insecure state."
     },
     {
       "id": "OWASP-ASVS-V14.1.6",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that all unneeded features, documentation, sample applications and configurations are removed."
     },
     {
       "id": "OWASP-ASVS-V14.1.7",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that production environment does not include test code."
     },
     {
       "id": "OWASP-ASVS-V14.1.8",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that data, state information, and server instances related to the build and deployment process do not persist after the process has ended. (Ephemerality)."
     },
     {
       "id": "OWASP-ASVS-V14.1.9",
+      "scope": [
+        "Configuration",
+        "Build and Deploy"
+      ],
       "description": "Verify that application code or functionality can only be changed via the standard update or build process and not directly in production through application functionality or some other direct modification mechanism."
     },
     {
       "id": "OWASP-ASVS-V14.2.1",
+      "scope": [
+        "Configuration",
+        "Dependency"
+      ],
       "description": "Verify that all components are up to date, preferably using a dependency checker during build or compile time."
     },
     {
       "id": "OWASP-ASVS-V14.2.4",
+      "scope": [
+        "Configuration",
+        "Dependency"
+      ],
       "description": "Verify that third party components come from pre-defined, trusted and continually maintained repositories."
     },
     {
       "id": "OWASP-ASVS-V14.2.5",
+      "scope": [
+        "Configuration",
+        "Dependency"
+      ],
       "description": "Verify that a Software Bill of Materials (SBOM) is maintained of all third party libraries in use."
     },
     {
       "id": "OWASP-ASVS-V14.2.6",
+      "scope": [
+        "Configuration",
+        "Dependency"
+      ],
       "description": "Verify that risky third party libraries or those with a history of vulnerabilities are encapsulated such that only required behaviour is available to the application, to reduce attack surface."
     },
     {
       "id": "OWASP-ASVS-V14.2.7",
+      "scope": [
+        "Configuration",
+        "Dependency"
+      ],
       "description": "Verify that third party components are sourced separately from internally owned and developed applications to prevent dependency confusion attacks."
     },
     {
       "id": "OWASP-ASVS-V14.2.8",
+      "scope": [
+        "Configuration",
+        "Dependency"
+      ],
       "description": "Verify that risky third party libraries or those with a history of vulnerabilities are sandboxed away from the most sensitive system modules/services so that even if a vulnerability in the library was successfully exploited, the sensitive system modules/services would not be compromised."
     },
     {
       "id": "OWASP-ASVS-V14.3.2",
+      "scope": [
+        "Configuration",
+        "Unintended Information Leakage"
+      ],
       "description": "Verify that debug modes are disabled in production environments for every component to prevent exposure of debug features and unintended information leakage."
     },
     {
       "id": "OWASP-ASVS-V14.3.3",
+      "scope": [
+        "Configuration",
+        "Unintended Information Leakage"
+      ],
       "description": "Verify that the HTTP headers or any part of the HTTP response do not expose detailed version information of server-side components."
     },
     {
       "id": "OWASP-ASVS-V14.3.4",
+      "scope": [
+        "Configuration",
+        "Unintended Information Leakage"
+      ],
       "description": "Verify that directory browsing is disabled unless deliberately desired."
     },
     {
       "id": "OWASP-ASVS-V14.3.5",
+      "scope": [
+        "Configuration",
+        "Unintended Information Leakage"
+      ],
       "description": "Verify that applications do not allow discovery or disclosure of file or directory metadata, such as Thumbs.db, .DS_Store, .git or .svn folders."
     },
     {
       "id": "OWASP-ASVS-V14.3.6",
+      "scope": [
+        "Configuration",
+        "Unintended Information Leakage"
+      ],
       "description": "Verify that the web tier is configured to serve only files with specific file extensions to prevent unintentional information and source code leakage. For example, backup files (e.g. .bak), temporary working files (e.g. .swp), compressed files (.zip, .tar.gz, etc.) and other extensions commonly used by editors should be blocked unless required."
     },
     {
       "id": "OWASP-ASVS-V14.4.1",
+      "scope": [
+        "Configuration",
+        "HTTP Security Headers"
+      ],
       "description": "Verify that every HTTP response contains a Content-Type header which matches the actual content of the response."
     },
     {
       "id": "OWASP-ASVS-V14.4.8",
+      "scope": [
+        "Configuration",
+        "HTTP Security Headers"
+      ],
       "description": "Verify that if a response specifies a Content-Type of \"text/\\*\", \"\\*/\\*+xml\" and \"\\*/xml\", it also specifies a safe character set (e.g., UTF-8, ISO-8859-1) with the charset parameter."
     },
     {
       "id": "OWASP-ASVS-V14.5.1",
+      "scope": [
+        "Configuration",
+        "HTTP Request Header Validation"
+      ],
       "description": "Verify that the application only responds to HTTP methods in use by the application or by the API (including OPTIONS during preflight requests) and unused methods (e.g. TRACE) are blocked."
     },
     {
       "id": "OWASP-ASVS-V14.5.5",
+      "scope": [
+        "Configuration",
+        "HTTP Request Header Validation"
+      ],
       "description": "Verify that HTTP requests using the HEAD, OPTIONS, TRACE or GET verb do not modify any backend data structure or perform any state-changing actions. These requests are safe methods and should therefore not have any side effects."
     },
     {
       "id": "OWASP-ASVS-V14.5.6",
+      "scope": [
+        "Configuration",
+        "HTTP Request Header Validation"
+      ],
       "description": "Verify that all application components, including load balancers, firewalls, and application servers, comply with RFC 2616 by ignoring the Content-Length header when a Transfer-Encoding header is present, to prevent HTTP Request Smuggling."
     },
     {
       "id": "OWASP-ASVS-V14.5.7",
+      "scope": [
+        "Configuration",
+        "HTTP Request Header Validation"
+      ],
       "description": "Verify that the web application warns users who are using an old browser which does not support HTTP security features on which the application relies. The list of old browsers must be periodically reviewed and updated."
     },
     {
       "id": "OWASP-ASVS-V14.5.8",
+      "scope": [
+        "Configuration",
+        "HTTP Request Header Validation"
+      ],
       "description": "Verify that any HTTP headers used by the application and defined by intermediary devices like load balancers or proxies, such as X-Real-IP and X-Forwarded-*, cannot be overridden by the end-user."
     },
     {
       "id": "OWASP-ASVS-V14.6.1",
+      "scope": [
+        "Configuration",
+        "HTTP/2"
+      ],
       "description": "Verify that the value in the Content-Length request header matches the calculated length using the built-in mechanism."
     },
     {
       "id": "OWASP-ASVS-V14.6.2",
+      "scope": [
+        "Configuration",
+        "HTTP/2"
+      ],
       "description": "Verify that all Transfer-Encoding headers are stripped from the message or that the request is blocked entirely."
     },
     {
       "id": "OWASP-ASVS-V14.6.3",
+      "scope": [
+        "Configuration",
+        "HTTP/2"
+      ],
       "description": "Verify that a full CRLF (\\r\\n) sequence is neutralized inside a HTTP/2 header."
     },
     {
       "id": "OWASP-ASVS-V14.7.1",
+      "scope": [
+        "Configuration",
+        "Web or Application Server Configuration"
+      ],
       "description": "Verify that the web or application server is configured with an allow list of resources or systems to which the server can send requests or load data or files from."
     },
     {
       "id": "OWASP-ASVS-V50.1.1",
+      "scope": [
+        "Web Frontend Security",
+        "Site Isolation Architecture"
+      ],
       "description": "Verify that separate applications are hosted on different hostnames to benefit from the restrictions provided by the \"same-origin policy\" including how documents or scripts loaded by one origin can interact with resources from another origin and hostname restrictions on cookies."
     },
     {
       "id": "OWASP-ASVS-V50.2.1",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Security Mechanism Headers"
+      ],
       "description": "Verify that a Content Security Policy (CSP) response header is in place that helps mitigate impact for XSS attacks like HTML, DOM, CSS, JSON, and JavaScript injection vulnerabilities."
     },
     {
       "id": "OWASP-ASVS-V50.2.2",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Security Mechanism Headers"
+      ],
       "description": "Verify that all responses contain a X-Content-Type-Options: nosniff header."
     },
     {
       "id": "OWASP-ASVS-V50.2.3",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Security Mechanism Headers"
+      ],
       "description": "Verify that a Strict-Transport-Security header is included on all responses and for all subdomains, such as Strict-Transport-Security: max-age=31536000; includeSubdomains."
     },
     {
       "id": "OWASP-ASVS-V50.2.4",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Security Mechanism Headers"
+      ],
       "description": "Verify that a suitable Referrer-Policy header is included to avoid exposing sensitive information in the URL through the Referer header to untrusted parties."
     },
     {
       "id": "OWASP-ASVS-V50.2.5",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Security Mechanism Headers"
+      ],
       "description": "Verify that the content of a web application cannot be embedded in a third-party site by default and that embedding of the exact resources is only allowed where necessary by using suitable Content-Security-Policy: frame-ancestors. Note that the X-Frame-Options solution is obsoleted."
     },
     {
       "id": "OWASP-ASVS-V50.2.6",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Security Mechanism Headers"
+      ],
       "description": "Verify that the Cross-Origin Resource Sharing (CORS) Access-Control-Allow-Origin header uses a strict allow list of trusted origins. When \"Access-Control-Allow-Origin: *\" needs to be used, verify that the responses do not include any sensitive information."
     },
     {
       "id": "OWASP-ASVS-V50.3.1",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Origin Separation"
+      ],
       "description": "Verify that the application defends against Cross-Site Request Forgery (CSRF) attacks to protect authenticated or sensitive public functionality using the development framework's built-in anti-CSRF functionality or CSRF tokens plus additional defense in depth measures."
     },
     {
       "id": "OWASP-ASVS-V50.3.2",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Origin Separation"
+      ],
       "description": "Verify that messages received by the postMessage interface are discarded if the origin of the message is not trusted, or if the syntax of the message is invalid."
     },
     {
       "id": "OWASP-ASVS-V50.3.3",
+      "scope": [
+        "Web Frontend Security",
+        "Browser Origin Separation"
+      ],
       "description": "Verify that the Origin header is validated against a defined list of allowed origins to match the desired Cross-Origin Resource Sharing (CORS) policy."
     },
     {
       "id": "OWASP-ASVS-V50.4.1",
+      "scope": [
+        "Web Frontend Security",
+        "Cross-Site Script Inclusion"
+      ],
       "description": "Verify that JSONP functionality is not enabled anywhere across the application to avoid Cross-Site Script Inclusion (XSSI) attacks."
     },
     {
       "id": "OWASP-ASVS-V50.4.2",
+      "scope": [
+        "Web Frontend Security",
+        "Cross-Site Script Inclusion"
+      ],
       "description": "Verify that data requiring authorization is not included in script resource responses, like JavaScript files, to prevent Cross-Site Script Inclusion (XSSI) attacks."
     },
     {
       "id": "OWASP-ASVS-V50.5.1",
+      "scope": [
+        "Web Frontend Security",
+        "Unintended Content Interpretation"
+      ],
       "description": "Verify that direct requests to uploaded files will never be executed as HTML and JavaScript content."
     },
     {
       "id": "OWASP-ASVS-V50.5.2",
+      "scope": [
+        "Web Frontend Security",
+        "Unintended Content Interpretation"
+      ],
       "description": "Verify that user-uploaded files - if required to be displayed or downloaded from the application - are served by either octet stream downloads, or from an unrelated domain, such as a cloud file storage bucket."
     },
     {
       "id": "OWASP-ASVS-V50.5.3",
+      "scope": [
+        "Web Frontend Security",
+        "Unintended Content Interpretation"
+      ],
       "description": "Verify that security controls are in place to prevent browsers from rendering content or functionality in HTTP responses in an incorrect context (e.g., when an API or other resource is loaded directly). Possible controls could include: not serving the content unless headers indicate it is the correct context, Content-Security-Policy: sandbox, Content-Disposition: attachment, etc."
     },
     {
       "id": "OWASP-ASVS-V50.6.1",
+      "scope": [
+        "Web Frontend Security",
+        "External Resource Integrity"
+      ],
       "description": "Verify that if client-side assets, such as JavaScript libraries, CSS or web fonts, are hosted externally on a Content Delivery Network (CDN) or external provider, Subresource Integrity (SRI) is used to validate the integrity of the asset."
     },
     {
       "id": "OWASP-ASVS-V50.7.1",
+      "scope": [
+        "Web Frontend Security",
+        "Other Browser Security Considerations"
+      ],
       "description": "Verify that the application shows a notification when the user is being redirected to a URL outside of the application's control, with an option to cancel the navigation."
     },
     {
       "id": "OWASP-ASVS-V50.7.2",
+      "scope": [
+        "Web Frontend Security",
+        "Other Browser Security Considerations"
+      ],
       "description": "Verify the application only uses client-side technologies which are still supported and considered secure. Examples of technologies which do not meet this requirement include NSAPI plugins, Flash, Shockwave, ActiveX, Silverlight, NACL, or client-side Java applets."
     }
   ]
